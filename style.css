@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* urut ke bawah */
+  align-items: center;    /* tengah horizontal */
+  justify-content: center;
+  min-height: 100vh;      /* full layar */
+  background: #eadc73;       /* contoh latar */
+}
+
+#kotak1, #kotak12 {
+  width: 100%;        
+  max-width: 600px;   /* batas maksimal */
+  height: auto;       
+  display: block;
+  margin: 0 auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  position: relative;
+  
+}#info{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 10px;            /* jarak dari atas kotak */
+  right: 10px;          /* jarak dari kanan kotak */
+  width: 100px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.planet-wrapper {
+  position: relative; /* penting! biar child absolute bisa nempel */
+  text-align: center;
+  margin-top: 5%;
+  width: 100%;
+  max-width: 532px;
+}
+
+#tombolmasuk{
+  width: 100%;       
+  max-width: 200px;  
+  height: auto;      
+  display: block;
+  position: absolute;            
+  bottom: 35%;   /* ganti dari top -570px */
+  left: 50%;
+  transform: translateX(-50%); 
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  animation: spin 12s linear infinite, float 3s ease-in-out infinite;
+}#telur{
+  width: 100%;       
+  max-width: 230px;  
+  height: auto;      
+  display: block;
+  position: absolute;            
+  bottom: 42%;   /* ganti dari top -570px */
+  left: 50%;
+  transform: translateX(-50%); 
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  animation: spin 12s linear infinite, float 3s ease-in-out infinite;
+}
+
+/* Animasi */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(-50%, 0); }
+  50%      { transform: translate(-50%, -10px); }
+}
+
+#kotak2,#kotak22 {
+  width: 100%; 
+  max-width: 395px; 
+  height: auto; 
+  display: block; 
+  position: absolute; 
+  top: 40%;       /* ganti dari top -450px */
+  left: 50%; 
+  transform: translateX(-50%); 
+  image-rendering: pixelated; 
+  image-rendering: crisp-edges;
+}#kotak33{
+  width: 100%; 
+  max-width: 450px; 
+  height: auto; 
+  display: block; 
+  position: absolute; 
+  top: 30%;       /* ganti dari top -450px */
+  left: 50%; 
+  transform: translateX(-50%); 
+  image-rendering: pixelated; 
+  image-rendering: crisp-edges;
+}
+
+#selamatdatang, #needy ,#katakomen{ 
+  width: 90%;       
+  max-width: 395px;  
+  position: absolute;
+  top: 25%;   /* ganti dari top -450px */
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(36, 43, 27); 
+  font-size: clamp(10px, 4vw, 38px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-shadow: 2px 2px 4px black; 
+  text-align: center; 
+}#katakomen{
+  width: 90%;       
+  max-width: 395px;  
+  position: absolute;
+  top: 10%;   /* ganti dari top -450px */
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(36, 43, 27); 
+  font-size: clamp(10px, 4vw, 38px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-shadow: 2px 2px 4px black; 
+  text-align: center;
+}#rebus{
+  width: 90%;       
+  max-width: 409px;  
+  position: absolute;
+  top: 0%;   /* ganti dari top -450px */
+  left: 40%;
+  transform: translateX(-50%);
+  color: rgb(36, 43, 27); 
+  font-size: clamp(10px, 5vw, 38px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-shadow: 2px 2px 4px black; 
+  text-align: center;
+}
+
+#Klairoentrence { 
+  width: 100%;       
+  max-width: 395px;  
+  position: absolute;
+  top: 74%;   /* ganti dari top -450px */
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(7, 7, 7); 
+  font-size: clamp(16px, 4vw, 30px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); 
+  text-align: center; 
+  background-color: #f4ecb0;
+  border-radius: 30px;
+  border-style:double;
+
+}#start { 
+  width: 90%;       
+  max-width: 395px;  
+  position: absolute;
+  top: 63%;   /* ganti dari top -450px */
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(180, 97, 97); 
+  font-size: clamp(16px, 4vw, 30px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); 
+  text-align: center;
+
+}#tombolstop{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 20px;            /* jarak dari atas kotak */
+  right: 140px;          /* jarak dari kanan kotak */
+  width: 160px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  transform: translateX(-50%); 
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  
+}#tombolngl{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 160px;            /* jarak dari atas kotak */
+  right: 160px;          /* jarak dari kanan kotak */
+  width: 140px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  transform: translateX(-50%); 
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  
+}#hitungmundur{
+  width: 90%;       
+  max-width: 395px;  
+  position: absolute;
+  top: 53%;   /* ganti dari top -450px */
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(76, 70, 33); 
+  font-size: clamp(16px, 7vw, 60px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); 
+  text-align: center; 
+
+}#tombolwatch {
+  width: 90%;
+  max-width: 250px;
+  position: absolute;
+    text-align: center;
+    transform: translateX(-50%);
+    top: 70%;   /* ganti dari top -450px */
+  left: 50%;
+}
+.tombol {
+  
+    font-size: 1.5em;
+    font-family: "Pixelify Sans", sans-serif;
+    color: black;
+    background-color: rgb(242, 188, 12);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    border-radius: 20px;
+
+}
+.tombol:hover{
+     background-color: rgb(26, 225, 159);
+     
+}#popupBox {
+  width: 100%;       
+  max-width: 395px;  
+  position: absolute;
+  top: 45%;   /* ganti dari top -450px */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: #fff4a1;
+  padding: 20px;
+  border-radius: 20px;
+  font-family: "Pixelify Sans", sans-serif;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  font-size: clamp(16px, 3vw, 30px); 
+}#kembali1{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 10px;            /* jarak dari atas kotak */
+  right: 10px;          /* jarak dari kanan kotak */
+  width: 100px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+
+}#nanti1{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 20px;            /* jarak dari atas kotak */
+  left: 280px;           /* jarak dari kanan kotak */
+  width: 140px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  transform: translateX(-50%); 
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+
+}#nanti2{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 160px;            /* jarak dari atas kotak */
+  left: 280px;          /* jarak dari kanan kotak */
+  width: 140px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  transform: translateX(-50%); 
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}#komenn{      
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}#nama{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 7px;            /* jarak dari atas kotak */
+  left: 90px;           /* jarak dari kanan kotak */
+  width: 200px;
+  height: auto;
+  color: rgb(7, 7, 7); 
+  font-size: clamp(16px, 4vw, 30px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); 
+  text-align: center; 
+}#isinama{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 50px;            /* jarak dari atas kotak */
+  left: 90px;           /* jarak dari kanan kotak */
+  width: 200px;
+  height: auto;
+  background-color: #edd627;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: clamp(16px, 4vw, 30px);
+}#komen{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 90px;            /* jarak dari atas kotak */
+  left: 50px;           /* jarak dari kanan kotak */
+  width: 300px;
+  height: auto;
+  color: rgb(7, 7, 7); 
+  font-size: clamp(16px, 4vw, 30px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); 
+  text-align: center; 
+}#isikomen{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 140px;            /* jarak dari atas kotak */
+  left: 60px;           /* jarak dari kanan kotak */
+  width: 200px;
+  height: auto;
+  background-color: #edd627;
+  border-radius: 20px;
+  padding: 40px;
+  font-size: clamp(16px, 4vw, 30px);
+}#sumit{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 250px;            /* jarak dari atas kotak */
+  left: 120px;           /* jarak dari kanan kotak */
+  width: 140px;
+  height: auto;
+  font-size: 1.5em;
+    font-family: "Pixelify Sans", sans-serif;
+    color: black;
+    background-color: rgb(242, 188, 12);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    border-radius: 20px;
+}#linkngl{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 360px;            /* jarak dari atas kotak */
+  left: 120px;           /* jarak dari kanan kotak */
+  width: 140px;
+  height: auto;
+  font-size: 1.5em;
+    font-family: "Pixelify Sans", sans-serif;
+    color: black;
+    background-color: rgb(245, 51, 51);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    border-radius: 10px;
+    padding: 20px;
+}
