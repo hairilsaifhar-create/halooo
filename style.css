@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* urut ke bawah */
+  align-items: center;    /* tengah horizontal */
+  justify-content: center;
+  min-height: 100vh;      /* full layar */
+  background: #eadc73;       /* contoh latar */
+}
+
+#kotak1, #kotak12 {
+  width: 90%;        
+  max-width: 650px;   /* batas maksimal */
+  height: auto;       
+  display: block;
+  margin: 20px auto;
+  aspect-ratio: 4 / 3;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  position: relative;}
+  
+  #kotak2{
+  position: absolute;
+  top: 10%;   /* posisinya relatif ke kotak1 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 68%;   /* menyesuaikan ukuran kotak1 */
+  aspect-ratio: 1 / 1;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;}
+
+  #kotak22{
+     position: absolute;
+  top: 12%;   /* posisinya relatif ke kotak1 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 86%;   /* menyesuaikan ukuran kotak1 */
+  aspect-ratio: 3 / 2;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;}
+  
+  #tombolmasuk{
+  position: absolute;
+  top: 20%;
+  left: 53%;
+  transform: translateX(-50%);
+  width: 40%;   /* relatif ke kotak2 */
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  animation: spin 12s linear infinite, float 3s ease-in-out infinite;
+}
+
+#info{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 2%;            /* jarak dari atas kotak */
+  right: 8%;          /* jarak dari kanan kotak */
+  width: clamp(60px, 15%, 100px);
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+
+}#selamatdatang ,#katakomen{ 
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(36, 43, 27); 
+  font-size: clamp(10px, 5vw, 34px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-align: center; }
+
+  #needy{
+  position: absolute;
+  top: 8%;
+  left: 40%;
+  transform: translateX(-50%);
+  color: rgb(36, 43, 27); 
+  font-size: clamp(10px, 4vw, 30px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-align: center;
+
+  }
+
+  #Klairoentrence { 
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(14px, 4vw, 30px);
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  color: rgb(7, 7, 7); 
+   text-align: center;
+  font-family: "Pixelify Sans", sans-serif; 
+  text-align: center; 
+  background-color: #f4ecb0;
+  border-radius: 30px;
+  border-style:double;}
+  
+  
+
+.planet-wrapper {
+  position: relative; /* penting! biar child absolute bisa nempel */
+  text-align: center;
+  margin-top: 5%;
+  width: 100%;
+  max-width: 532px;
+}
+
+
+  
+  #telur{
+  position: absolute;
+  top: 10%;
+  left: 48%;
+  transform: translateX(-50%);
+  width: 40%;   /* relatif ke kotak2 */
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  animation: spin 12s linear infinite, float 3s ease-in-out infinite;
+}
+
+/* Animasi */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(-50%, 0); }
+  50%      { transform: translate(-50%, -10px); }
+}
+
+
+#kotak33{
+   position: absolute;
+  top: 12%;   /* posisinya relatif ke kotak1 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 86%;   /* menyesuaikan ukuran kotak1 */
+  aspect-ratio: 3 / 2;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;}
+
+#rebus{
+  position: absolute;
+  top: 3%;
+  left: 40%;
+  transform: translateX(-50%);
+  color: rgb(36, 43, 27); 
+  font-size: clamp(10px, 4vw, 40px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-align: center;
+
+}
+
+#start { 
+position: absolute;
+  top: 65%;  /* letakkan di bawah tombol kucing */
+  left: 54%;
+  transform: translateX(-50%);
+  font-size: clamp(12px, 4vw, 30px);
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  color: rgb(180, 97, 97);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-align: center;
+
+}#tombolstop
+  {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  transform: translateX(-50%);
+  width: 30%;   /* relatif ke kotak2 */
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  animation: spin 12s linear infinite, float 3s ease-in-out infinite;
+  
+}
+  
+#tombolngl{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translateX(-50%);
+  width: 28%;   /* relatif ke kotak2 */
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  animation: spin 12s linear infinite, float 3s ease-in-out infinite;
+  }
+
+  #hitungmundur{
+  position: absolute;
+  top: 66%;
+  left: 48%;
+  transform: translateX(-50%);
+  width: 30%;   /* relatif ke kotak2 */
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  animation: spin 12s linear infinite, float 3s ease-in-out infinite;
+  color: rgb(76, 70, 33); 
+  font-size: clamp(16px, 7vw, 60px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-align: center; 
+
+}#tombolwatch {
+  position: absolute;
+  top: 85%;
+  left: 46%;
+  transform: translateX(-50%);
+  width: 45%;   /* relatif ke kotak2 */
+  max-width: 45%;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  
+}
+.tombol {
+  
+    font-size: 1.5em;
+    font-family: "Pixelify Sans", sans-serif;
+    color: black;
+    background-color: rgb(242, 188, 12);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    border-radius: 20px;
+
+}
+.tombol:hover{
+     background-color: rgb(26, 225, 159);
+     
+}#popupBox {
+  position: absolute;
+  top: 110%;
+  left: 49%;
+  transform: translateX(-50%);
+  font-size: clamp(14px, 3vw, 30px);
+  width: 130%;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  animation: spin 12s linear infinite, float 3s ease-in-out infinite;
+}
+
+.popup-content {
+  border: 2px solid #333;
+  background: #fff4a1;
+  border-radius: 20px;
+  font-family: "Pixelify Sans", sans-serif;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  font-size: clamp(14px, 3vw, 30px); 
+  width: 100%;
+
+}#kembali1{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 2%;            /* jarak dari atas kotak */
+  right: 8%;          /* jarak dari kanan kotak */
+  width: clamp(60px, 15%, 100px);
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+
+}#nanti1{
+  position: absolute;
+  top: 17%;
+  left: 70%;
+  transform: translateX(-50%);
+  width: 28%;   /* relatif ke kotak2 */
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  animation: spin 12s linear infinite, float 3s ease-in-out infinite;
+  }
+
+#nanti2{
+ position: absolute;
+  top: 56%;
+  left: 70%;
+  transform: translateX(-50%);
+  width: 28%;   /* relatif ke kotak2 */
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  animation: spin 12s linear infinite, float 3s ease-in-out infinite;
+  }
+
+  #komenn{   
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  transform: translateX(-50%);
+  width: 40%;   /* relatif ke kotak2 */
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}#nama{
+  position: absolute;
+  top: 10%;
+  left: 87%;
+  transform: translateX(-50%);
+  width: 69%;   /* relatif ke kotak2 */
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  color: rgb(7, 7, 7); 
+  font-size: clamp(16px, 4vw, 30px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); 
+  text-align: center; 
+}#isinama{
+  position: absolute;
+  top: 30%;
+  left: 87%;
+  transform: translateX(-50%);
+  width: 69%;   /* relatif ke kotak2 */
+  aspect-ratio: 7 / 1;
+  cursor: pointer;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  background-color: #edd627;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: clamp(16px, 4vw, 30px);
+}#komen{
+  position: absolute;
+  top: 50%;
+  left: 87%;
+  transform: translateX(-50%);
+  width: 120%;   /* relatif ke kotak2 */
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  color: rgb(7, 7, 7); 
+  font-size: clamp(16px, 4vw, 30px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); 
+  text-align: center; 
+}#isikomen{
+  position: absolute;
+  top: 70%;
+  left: 87%;
+  transform: translateX(-50%);
+  width: 69%;   /* relatif ke kotak2 */
+  aspect-ratio: 7 / 1;
+  cursor: pointer;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  background-color: #edd627;
+  border-radius: 20px;
+  padding: 30px;
+  font-size: clamp(16px, 4vw, 30px);
+}#sumit{
+  position: absolute;
+  top: 123%;
+  left: 87%;
+  transform: translateX(-50%);
+  width: 69%;   /* relatif ke kotak2 */
+  aspect-ratio: 7 / 1;
+  cursor: pointer;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  font-size: 1.5em;
+    font-family: "Pixelify Sans", sans-serif;
+    color: black;
+    background-color: rgb(242, 188, 12);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    border-radius: 20px;
+}#linkngl{
+position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45%;   /* relatif ke kotak2 */
+  max-width: 45%;   /* relatif ke kotak2 */
+  aspect-ratio: 5 / 1;
+  cursor: pointer;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  font-size: 1.5em;
+    font-family: "Pixelify Sans", sans-serif;
+    color: black;
+    background-color: rgb(245, 51, 51);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    border-radius: 10px;
+    padding: 20px;
+}
