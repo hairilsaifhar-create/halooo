@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* urut ke bawah */
+  align-items: center;    /* tengah horizontal */
+  justify-content: center;
+  min-height: 100vh;      /* full layar */
+  background: #eadc73;       /* contoh latar */
+}
+
+#kotak1, #kotak12 {
+  width: 100%;        
+  max-width: 600px;   /* batas maksimal */
+  height: auto;       
+  display: block;
+  margin: 0 auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  position: relative;
+  
+}#info{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 10px;            /* jarak dari atas kotak */
+  right: 10px;          /* jarak dari kanan kotak */
+  width: 100px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.planet-wrapper {
+  position: relative; /* penting! biar child absolute bisa nempel */
+  text-align: center;
+  margin-top: 5%;
+  width: 100%;
+  max-width: 532px;
+}
+
+#tombolmasuk{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 145px;            /* jarak dari atas kotak */
+  right: 70px;          /* jarak dari kanan kotak */
+  width: 170px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  animation: spin 12s linear infinite, float 3s ease-in-out infinite;
+}#telur{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 50px;            /* jarak dari atas kotak */
+  left:190px;          /* jarak dari kanan kotak */
+  width: 250px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  animation: spin 12s linear infinite, float 3s ease-in-out infinite;
+}
+
+/* Animasi */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(-50%, 0); }
+  50%      { transform: translate(-50%, -10px); }
+}
+
+#kotak2,#kotak22 {
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 100px;            /* jarak dari atas kotak */
+  right: 45px;          /* jarak dari kanan kotak */
+  width: 400px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}#kotak33{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 50px;            /* jarak dari atas kotak */
+  right: 7%;          /* jarak dari kanan kotak */
+  width: 450px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+#selamatdatang, #needy ,#katakomen{ 
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 10px;            /* jarak dari atas kotak */
+  right: 250px;          /* jarak dari kanan kotak */
+  width: 400px;
+  height: auto;
+  color: rgb(36, 43, 27); 
+  font-size: clamp(10px, 5vw, 38px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-shadow: 2px 2px 4px black; 
+  text-align: center; 
+}#katakomen{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 240px;            /* jarak dari atas kotak */
+  right: 180px;          /* jarak dari kanan kotak */
+  width: 100px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  color: rgb(36, 43, 27); 
+  font-size: clamp(10px, 4vw, 38px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-shadow: 2px 2px 4px black; 
+  text-align: center;
+}#rebus{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 0px;            /* jarak dari atas kotak */
+  right: 180px;          /* jarak dari kanan kotak */
+  width: 400px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  font-size: clamp(10px, 5vw, 38px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-shadow: 2px 2px 4px black; 
+  text-align: center;
+}
+
+#Klairoentrence { 
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 480px;            /* jarak dari atas kotak */
+  right: 70px;          /* jarak dari kanan kotak */
+  width: 450px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  color: rgb(7, 7, 7); 
+  font-size: clamp(16px, 4vw, 30px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); 
+  text-align: center; 
+  background-color: #f4ecb0;
+  border-radius: 30px;
+  border-style:double;
+
+}#start { 
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 300px;            /* jarak dari atas kotak */
+  right: 0px;          /* jarak dari kanan kotak */
+  width: 450px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  color: rgb(180, 97, 97); 
+  font-size: clamp(16px, 4vw, 30px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); 
+  text-align: center;
+
+}#tombolstop{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 100px;            /* jarak dari atas kotak */
+  right: 180px;          /* jarak dari kanan kotak */
+  width: 160px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  transform: translateX(-50%); 
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  
+}#tombolngl{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 250px;            /* jarak dari atas kotak */
+  right: 190px;          /* jarak dari kanan kotak */
+  width: 140px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  transform: translateX(-50%); 
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  
+}#hitungmundur{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 240px;            /* jarak dari atas kotak */
+  right: 180px;          /* jarak dari kanan kotak */
+  width: 100px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  animation: spin 12s linear infinite, float 3s ease-in-out infinite;
+  color: rgb(76, 70, 33); 
+  font-size: clamp(16px, 7vw, 60px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); 
+  text-align: center; 
+
+}#tombolwatch {
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 390px;            /* jarak dari atas kotak */
+  left: 80px;          /* jarak dari kanan kotak */
+  width: 300px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  
+}
+.tombol {
+  
+    font-size: 1.5em;
+    font-family: "Pixelify Sans", sans-serif;
+    color: black;
+    background-color: rgb(242, 188, 12);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    border-radius: 20px;
+
+}
+.tombol:hover{
+     background-color: rgb(26, 225, 159);
+     
+}#popupBox {
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 600px;            /* jarak dari atas kotak */
+  left: 300px;          /* jarak dari kanan kotak */
+  width: 500px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  animation: spin 12s linear infinite, float 3s ease-in-out infinite;
+}
+
+.popup-content {
+  background: #fff4a1;
+  padding: 20px;
+  border-radius: 20px;
+  font-family: "Pixelify Sans", sans-serif;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  font-size: clamp(16px, 3vw, 30px); 
+}#kembali1{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 10px;            /* jarak dari atas kotak */
+  right: 10px;          /* jarak dari kanan kotak */
+  width: 100px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+
+}#nanti1{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 100px;            /* jarak dari atas kotak */
+  left: 250px;           /* jarak dari kanan kotak */
+  width: 140px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  transform: translateX(-50%); 
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+
+}#nanti2{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 250px;            /* jarak dari atas kotak */
+  left: 250px;          /* jarak dari kanan kotak */
+  width: 140px;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  transform: translateX(-50%); 
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}#komenn{   
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 100px;            /* jarak dari atas kotak */
+  right: 240px;           /* jarak dari kanan kotak */
+  width: 200px;
+  height: auto;   
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}#nama{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 7px;            /* jarak dari atas kotak */
+  left: 90px;           /* jarak dari kanan kotak */
+  width: 200px;
+  height: auto;
+  color: rgb(7, 7, 7); 
+  font-size: clamp(16px, 4vw, 30px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); 
+  text-align: center; 
+}#isinama{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 50px;            /* jarak dari atas kotak */
+  left: 90px;           /* jarak dari kanan kotak */
+  width: 200px;
+  height: auto;
+  background-color: #edd627;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: clamp(16px, 4vw, 30px);
+}#komen{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 90px;            /* jarak dari atas kotak */
+  left: 50px;           /* jarak dari kanan kotak */
+  width: 300px;
+  height: auto;
+  color: rgb(7, 7, 7); 
+  font-size: clamp(16px, 4vw, 30px);  
+  font-family: "Pixelify Sans", sans-serif; 
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); 
+  text-align: center; 
+}#isikomen{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 140px;            /* jarak dari atas kotak */
+  left: 60px;           /* jarak dari kanan kotak */
+  width: 200px;
+  height: auto;
+  background-color: #edd627;
+  border-radius: 20px;
+  padding: 40px;
+  font-size: clamp(16px, 4vw, 30px);
+}#sumit{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 265px;            /* jarak dari atas kotak */
+  left: 120px;           /* jarak dari kanan kotak */
+  width: 140px;
+  height: auto;
+  font-size: 1.5em;
+    font-family: "Pixelify Sans", sans-serif;
+    color: black;
+    background-color: rgb(242, 188, 12);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    border-radius: 20px;
+}#linkngl{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 480px;            /* jarak dari atas kotak */
+  left: 89px;           /* jarak dari kanan kotak */
+  width: 140px;
+  height: auto;
+  font-size: 1.5em;
+    font-family: "Pixelify Sans", sans-serif;
+    color: black;
+    background-color: rgb(245, 51, 51);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    border-radius: 10px;
+    padding: 20px;
+}#katakomen{
+  position: absolute;  /* jadi nempel ke #kotak1 */
+  top: 10px;            /* jarak dari atas kotak */
+  right: 200px;          /* jarak dari kanan kotak */
+  width: 340px;
+  font-size: clamp(16px, 5vw, 40px);
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
