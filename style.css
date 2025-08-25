@@ -219,10 +219,12 @@ position: absolute;
 
 }#tombolwatch {
  position: absolute;
-  top: 85%;
-  left: 50%;
+  top: 80%;
+  left: 84%;
   transform: translateX(-50%);
-  max-width: 120%;
+  width: 120%;
+  min-width: 0%;
+  max-width: 600%;
   aspect-ratio: 1 / 1;
   cursor: pointer;
   image-rendering: pixelated;
@@ -410,3 +412,4 @@ position: absolute;
     padding: 20px;
 
 }
+
