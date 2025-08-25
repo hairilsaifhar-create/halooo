@@ -218,16 +218,16 @@ position: absolute;
   text-align: center; 
 
 }#tombolwatch {
-  position: absolute;
+ position: absolute;
   top: 85%;
-  left: 46%;
+  left: 50%;
   transform: translateX(-50%);
-  width: 45%;   /* relatif ke kotak2 */
-  max-width: 45%;
+  max-width: 120%;
   aspect-ratio: 1 / 1;
   cursor: pointer;
   image-rendering: pixelated;
   image-rendering: crisp-edges;
+  padding: 8px 18px;
   
 }
 .tombol {
@@ -408,4 +408,5 @@ position: absolute;
     transition: background-color 0.25s;
     border-radius: 10px;
     padding: 20px;
+
 }
