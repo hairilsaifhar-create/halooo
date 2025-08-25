@@ -223,15 +223,18 @@ position: absolute;
   left: 84%;
   transform: translateX(-50%);
   width: 120%;
-  min-width: 0%;
-  max-width: 600%;
   aspect-ratio: 1 / 1;
   cursor: pointer;
   image-rendering: pixelated;
-  image-rendering: crisp-edges;
-  padding: 8px 18px;
-  
+  image-rendering: crisp-edges;}
+    
+@media (max-width: 600px) {
+  #tombolwatch {
+    top: 80%; /* geser sedikit biar center enak */
+    left: 70%;
+  }
 }
+  
 .tombol {
   
     font-size: 1.5em;
@@ -412,4 +415,5 @@ position: absolute;
     padding: 20px;
 
 }
+
 
